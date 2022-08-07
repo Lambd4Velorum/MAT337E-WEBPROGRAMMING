@@ -1,0 +1,25 @@
+<html> <br><br><br> <br> 
+<form action="05l05.php" method="post"> 
+     <table bgcolor=aqua align=center width=250 height=150> 
+        <TR><TH COLSPAN=2 > <B> PERSONEL BILGILERI </B> 
+        <TR>
+           <TD ALIGN="RIGHT" ><B>Ad:</B>
+           <TD> <INPUT TYPE="text" NAME="ad" SIZE="20">
+        <TR>
+           <TD ALIGN="RIGHT"  ><B>Soyad:</B>
+           <TD> <INPUT TYPE="text" NAME="soyad" SIZE="20">
+        <TR>
+           <TD ALIGN="right" ><B>Bolum:</B>
+           <TD>    <SELECT NAME="bolum" type="text" > 
+                   <OPTION VALUE ="Fizik" >Fizik</OPTION>
+                   <OPTION VALUE ="Kimya">Kimya</OPTION>
+                   <OPTION VALUE ="Matematik">Matematik</OPTION>
+                   </SELECT> 
+           <TD>    <input type="submit" name="gonderim" value="Gonder">   
+ <?php  extract($_POST);
+ $dosout=fopen("dos.txt","a+");
+ if ($ad !="" and $soyad !=""){
+     fwrite($dosout,"$ad $soyad $bolum\n");
+ }
+?>
+</table></form></html>

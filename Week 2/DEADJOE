@@ -1,0 +1,14 @@
+
+*** These modified files were found in JOE when it aborted on Wed Oct 30 19:28:36 2019
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+02l01.php
+01l01.html
+02l01.php
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
